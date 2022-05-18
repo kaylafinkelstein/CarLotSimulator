@@ -53,6 +53,10 @@ namespace CarLotSimulator
 
             FutureCar.MakeEngineNoise();
 
+            //From there create 3 cars in the Main() and then each time you create a car, 
+            //do a Console.WriteLine() printing the current number of cars in the car lot
+            Console.WriteLine($"The number of cars in the car lot: {CarLot.NumberOfCars}");
+
 
             //*************BONUS*************//
 
@@ -65,7 +69,7 @@ namespace CarLotSimulator
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
 
-            foreach(var Car in lot.ParkingLot)
+            foreach (var Car in lot.ParkingLot)
             {
                 Console.WriteLine($"Year:{Car.Year} Make: {Car.Make} Model:{Car.Model}");
             }
